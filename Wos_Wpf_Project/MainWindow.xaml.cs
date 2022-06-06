@@ -24,5 +24,30 @@ namespace Wos_Wpf_Project
         {
             InitializeComponent();
         }
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ReadButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
