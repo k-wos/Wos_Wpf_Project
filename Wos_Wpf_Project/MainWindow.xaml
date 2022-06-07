@@ -25,13 +25,13 @@
         </ListView>
         <CheckBox x:Name="EnableCheckBox" Content="Edit" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top"></CheckBox>
 
-        <Grid x:Name="EditGrid" IsEnabled="{Binding ElementName=EnableCheckBox, Path=IsChecked} " Margin="3,260,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <Grid x:Name="EditGrid" IsEnabled="{Binding ElementName=EnableCheckBox,Path=IsChecked}" Margin="3,260,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
             <Label Content="Name" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top"></Label>
             <Label Content="Address" HorizontalAlignment="Left" Margin="3,40,0,0" VerticalAlignment="Top"></Label>
             <Label Content="PhoneNumber" HorizontalAlignment="Left" Margin="3,80,0,0" VerticalAlignment="Top"></Label>
             <Label Content="WebAddress" HorizontalAlignment="Left" Margin="3,120,0,0" VerticalAlignment="Top"></Label>
             <TextBox Name="NameTextBox" Text="{Binding ElementName=ItemList , Path=SelectedItem.Name,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,0,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
-            <TextBox Name="AddressNumberTextBox" Text="{Binding ElementName=ItemList , Path=SelectedItem.Address,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,40,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
+            <TextBox Name="AddressTextBox" Text="{Binding ElementName=ItemList , Path=SelectedItem.Address,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,40,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
             <TextBox Name="PhoneNumberTextBox" Text="{Binding ElementName=ItemList , Path=SelectedItem.PhoneNumber,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,80,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
             <TextBox Name="WebAddressTextBox" Text="{Binding ElementName=ItemList , Path=SelectedItem.WebAddress,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,120,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
         </Grid>
