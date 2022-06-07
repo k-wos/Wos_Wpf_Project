@@ -88,5 +88,10 @@ namespace Wos_Wpf_Project
         {
             Update();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

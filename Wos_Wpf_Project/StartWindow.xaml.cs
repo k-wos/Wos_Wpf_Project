@@ -40,5 +40,11 @@ namespace Wos_Wpf_Project
             EmployeeWindow employeeWindow = new EmployeeWindow();
             employeeWindow.Show();
         }
+
+        private void Position_Crud(object sender, RoutedEventArgs e)
+        {
+            PositionWindow positionWindow = new PositionWindow();
+            positionWindow.Show();
+        }
     }
 }
