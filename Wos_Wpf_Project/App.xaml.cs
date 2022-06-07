@@ -19,6 +19,7 @@ namespace Wos_Wpf_Project
         {
             DatabaseFacade facade = new DatabaseFacade(new DataContext());
             facade.EnsureCreated();
+            
         }
     }
 }

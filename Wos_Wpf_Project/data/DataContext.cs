@@ -14,5 +14,8 @@ namespace Wos_Wpf_Project.data
             optionsBuilder.UseSqlite("Data Source = HallDb.db");
         }
         public DbSet<Hall> Halls { get; set; }
+        public DbSet<Events> EventList { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Position> Positions { get; set; }
     }
 }

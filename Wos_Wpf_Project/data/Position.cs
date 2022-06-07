@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace Wos_Wpf_Project.data
 {
-    public class Hall
+    public class Position
     {
         [Key]
-        public int Id { get; set; }
+        public int PositionId { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
-        public string PhoneNumber { get; set; }
-        public string WebAddress { get; set; }
-        public ICollection<Events> EventList { get; set; }
+
+        public ICollection<Employee> Employees { get; set; }
     }
 }

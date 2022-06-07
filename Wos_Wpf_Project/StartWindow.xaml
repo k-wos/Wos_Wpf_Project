@@ -10,7 +10,7 @@
     <Grid>
         <Button Content="Hall" HorizontalAlignment="Left" Margin="35,139,0,0" VerticalAlignment="Top" Height="67" Width="162" Click="Hall_Crud"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="35,267,0,0" VerticalAlignment="Top" Height="67" Width="162"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="255,139,0,0" VerticalAlignment="Top" Height="67" Width="162"/>
+        <Button Content="Event" HorizontalAlignment="Left" Margin="255,139,0,0" VerticalAlignment="Top" Height="67" Width="162" Click="Event_Crud"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="255,267,0,0" VerticalAlignment="Top" Height="67" Width="162"/>
     </Grid>
 </Window>

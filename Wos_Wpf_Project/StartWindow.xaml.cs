@@ -29,5 +29,10 @@ namespace Wos_Wpf_Project
             MainWindow hallWindow = new MainWindow();
             hallWindow.Show();
         }
+        private void Event_Crud(object sender, RoutedEventArgs e)
+        {
+            EventWindow eventWindow = new EventWindow();
+            eventWindow.Show();
+        }
     }
 }

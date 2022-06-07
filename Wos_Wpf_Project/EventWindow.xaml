@@ -1,0 +1,60 @@
+﻿<Window x:Class="Wos_Wpf_Project.EventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wos_Wpf_Project"
+        mc:Ignorable="d"
+        Title="EventWindow" Height="450" Width="800">
+    <Grid>
+        <ListView Name="EventItemList" Margin="5,20,5,0" Height="195" VerticalAlignment="Top">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Clear" Click="MenuItem_Click"></MenuItem>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="30" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
+                    <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Artist" Width="150" DisplayMemberBinding="{Binding Artist}"></GridViewColumn>
+                    <GridViewColumn Header="Date" Width="200" DisplayMemberBinding="{Binding EventDate}"></GridViewColumn>
+                    <GridViewColumn Header="Hall" Width="150" DisplayMemberBinding="{Binding HallName}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <CheckBox x:Name="EnableCheckBox" Content="Edit" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top"></CheckBox>
+
+        <Grid x:Name="EditGrid" IsEnabled="{Binding ElementName=EnableCheckBox,Path=IsChecked}" Margin="3,260,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Label Content="Name" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top"></Label>
+            <Label Content="Artist" HorizontalAlignment="Left" Margin="3,40,0,0" VerticalAlignment="Top"></Label>
+            <Label Content="Date" HorizontalAlignment="Left" Margin="3,80,0,0" VerticalAlignment="Top"></Label>
+            <Label Content="Hall" HorizontalAlignment="Left" Margin="3,120,0,0" VerticalAlignment="Top"></Label>
+            <TextBox Name="NameTextBox" Text="{Binding ElementName=EventItemList , Path=SelectedItem.Name,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,0,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
+            <TextBox Name="ArtistTextBox" Text="{Binding ElementName=EventItemList , Path=SelectedItem.Artist,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,40,0,0" Width="150" Height="26" VerticalAlignment="Top"></TextBox>
+            <DatePickerTextBox Name="DatePicker" Text="{Binding ElementName=EventItemList , Path=SelectedItem.EventDate,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,80,0,0" Width="150" Height="26" VerticalAlignment="Top"></DatePickerTextBox>
+            <ComboBox x:Name="HallComboBox" Text="{Binding ElementName=EventItemList , Path=SelectedItem.HallName,Mode=OneWay}" HorizontalAlignment="Left" Margin="100,120,0,0" Width="150" Height="26" VerticalAlignment="Top"></ComboBox>
+            
+        </Grid>
+        <Button x:Name="CreateButton" HorizontalAlignment="Left" Click="CreateButton_Click" Margin="10,440,0,0" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Create"></Label>
+            </StackPanel>
+        </Button>
+        <Button x:Name="ReadButton" HorizontalAlignment="Left" Click ="ReadButton_Click" Margin="90,440,0,0" VerticalAlignment="Top" >
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Read"></Label>
+            </StackPanel>
+        </Button>
+        <Button  x:Name="UpdateButton" HorizontalAlignment="Left" Click="UpdateButton_Click" Margin="170,440,0,0" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Update"></Label>
+            </StackPanel>
+        </Button>
+        <Button x:Name="DeleteButton" HorizontalAlignment="Left" Click="DeleteButton_Click" Margin="250,440,0,0" VerticalAlignment="Top" >
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Delete"></Label>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

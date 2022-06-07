@@ -25,6 +25,8 @@ namespace Wos_Wpf_Project
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
 
         public void Create()
