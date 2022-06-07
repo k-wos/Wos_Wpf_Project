@@ -34,5 +34,11 @@ namespace Wos_Wpf_Project
             EventWindow eventWindow = new EventWindow();
             eventWindow.Show();
         }
+
+        private void Employee_Crud(object sender, RoutedEventArgs e)
+        {
+            EmployeeWindow employeeWindow = new EmployeeWindow();
+            employeeWindow.Show();
+        }
     }
 }
