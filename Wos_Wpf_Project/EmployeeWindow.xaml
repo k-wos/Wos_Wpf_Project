@@ -18,7 +18,7 @@
                     <GridViewColumn Header="Id" Width="30" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
                     <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
                     <GridViewColumn Header="Surname" Width="150" DisplayMemberBinding="{Binding Surname}"></GridViewColumn>
-                    <GridViewColumn Header="PositionId" Width="200" DisplayMemberBinding="{Binding PositionId}"></GridViewColumn>
+                    <GridViewColumn Header="PositionId" Width="200" DisplayMemberBinding="{Binding CurrentPositionId}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
