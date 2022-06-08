@@ -12,5 +12,6 @@
         <Button Content="Employee" HorizontalAlignment="Left" Margin="35,267,0,0" VerticalAlignment="Top" Height="67" Width="162" Click="Employee_Crud" />
         <Button Content="Event" HorizontalAlignment="Left" Margin="255,139,0,0" VerticalAlignment="Top" Height="67" Width="162" Click="Event_Crud"/>
         <Button Content="Position" HorizontalAlignment="Left" Margin="255,267,0,0" VerticalAlignment="Top" Height="67" Width="162" Click="Position_Crud"/>
+        <Label Content="Wybierz Tabelę:" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
